@@ -84,6 +84,7 @@ Mede tempo de execução com `datetime.now()` e orquestra Extract -> Transform -
 pip install pandas openpyxl sqlalchemy mysql-connector-python
 python Python/ecommerce_etl_analytics.py
 ### 📊 14 Análises em SQL que respondi depois da carga
+```
 
 **Faturamento:**
 01. Faturamento por cliente
