@@ -110,14 +110,37 @@ python Python/ecommerce_etl_analytics.py
 - SQL (MySQL) - JOIN, GROUP BY, CTE, WINDOW FUNCTIONS
 - Excel - Validação
 
-### 🚀 Como Rodar
-1. pip install pandas openpyxl
-2. python ecommerce_etl_analytics.py
-3. Executar o database.sql no MySQL
-4. Rodar as queries do queries.sql
+### 📊 14 Análises em SQL que respondi depois da carga
 
----
----
+**Faturamento:**
+01. Faturamento por cliente
+02. Top 10 produtos mais vendidos
+03. Faturamento por categoria
+04. Faturamento por vendedor
+05. Ticket Médio por cliente
+
+**Rankings e Filtros:**
+06. Ranking de vendedores
+07. Faturamento mensal
+08. Pagamentos por cliente
+09. Top 10 clientes por Qtd de pedidos
+10. Vendedores acima da média (CTE + AVG)
+
+**Análises Avançadas com Window Functions:**
+11. Ranking de produtos por faturamento
+12. Ranking de vendedores por cliente
+13. Crescimento percentual mensal com LAG()
+14. Relatório completo de clientes com recorrência e inatividade
+
+### 🛠️ Tecnologias
+- Python (Pandas, SQLAlchemy, Logging)
+- SQL (MySQL) - JOIN, GROUP BY, CTE, WINDOW FUNCTIONS
+- Excel - Fonte dos dados
+
+### 🚀 Como Rodar
+```bash
+pip install pandas openpyxl sqlalchemy mysql-connector-python
+python Python/ecommerce_etl_analytics.py
 ### 👨‍💻 Autor
 
 
