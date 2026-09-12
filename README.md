@@ -1,4 +1,3 @@
-
 # 📦 Ecommerce ETL - De Excel para SQL
 
 Projeto de ETL onde extraí 7 planilhas de Excel, tratei com Python (Pandas) e carreguei para um banco SQL relacional para análises.
@@ -9,28 +8,28 @@ O foco do projeto é a engenharia dos dados: extração, transformação, tratam
 
 ### 📁 Estrutura do Projeto
 
-ecommerce_etl_analytics/
-│
-├── Python/
-│   ├── ecommerce_etl_analytics.py
-│   ├── clientes.xlsx
-│   ├── pedidos.xlsx
-│   ├── itens_pedido.xlsx
-│   ├── produtos.xlsx
-│   ├── categorias.xlsx
-│   ├── pagamentos.xlsx
-│   └── vendedores.xlsx
-│
-├── SQL/
-│   ├── database.sql
-│   └── queries.sql
-│
-├── Power BI/
-│   ├── Ecommerce Analytics.pbix
-│   ├── Visão Geral de Vendas.png
-│   └── Analise de Produtos e Vendas.png
-│
-└── README.md
+    ecommerce_etl_analytics/
+    │
+    ├── Python/
+    │   ├── ecommerce_etl_analytics.py
+    │   ├── clientes.xlsx
+    │   ├── pedidos.xlsx
+    │   ├── itens_pedido.xlsx
+    │   ├── produtos.xlsx
+    │   ├── categorias.xlsx
+    │   ├── pagamentos.xlsx
+    │   └── vendedores.xlsx
+    │
+    ├── SQL/
+    │   ├── database.sql
+    │   └── queries.sql
+    │
+    ├── Power BI/
+    │   ├── Ecommerce Analytics.pbix
+    │   ├── Visão Geral de Vendas.png
+    │   └── Analise de Produtos e Vendas.png
+    │
+    └── README.md
 
 ---
 
@@ -43,23 +42,23 @@ clientes.xlsx | pedidos.xlsx | itens_pedido.xlsx | produtos.xlsx | categorias.xl
 
 ### 🔧 Fluxo do ETL (Como o sistema funciona)
 
-1. **Extract - `extrair_dados()`**
-   - Leitura das 7 planilhas com `pd.read_excel()` + log de total de registros e tratamento de exceção com `logger.exception`.
+1. **Extract - extrair_dados()**
+   - Leitura das 7 planilhas com **pd.read_excel()** + log de total de registros e tratamento de exceção com **logger.exception**.
 
 2. **Transform - 7 funções de limpeza**
-   - `transformar_clientes()`, `transformar_categorias()`, `transformar_vendedores()` etc.
-   - `drop_duplicates()`
-   - Padronização de texto: `str.strip().str.lower() / .title() / .upper()`
-   - Conversão de moeda brasileira: `R$ 1.200,50 -> 1200.50` com `replace()`
-   - Conversão de tipos: `pd.to_numeric(errors="coerce")` e `pd.to_datetime(dayfirst=True)`
-   - Remoção de nulos com `dropna()` e filtro de valores negativos `df[df["valor"] >= 0]`
+   - **transformar_clientes()**, **transformar_categorias()**, **transformar_vendedores()** etc.
+   - **drop_duplicates()**
+   - Padronização de texto: **str.strip().str.lower() / .title() / .upper()**
+   - Conversão de moeda brasileira: **R$ 1.200,50 -> 1200.50** com **replace()**
+   - Conversão de tipos: **pd.to_numeric(errors="coerce")** e **pd.to_datetime(dayfirst=True)**
+   - Remoção de nulos com **dropna()** e filtro de valores negativos **df[df["valor"] >= 0]**
 
-3. **Load - `carregar_dados()`**
-   - Conexão com MySQL via `SQLAlchemy` (`mysql+mysqlconnector`) e carga com `to_sql(if_exists="append")` respeitando a ordem das FKs:  
+3. **Load - carregar_dados()**
+   - Conexão com MySQL via **SQLAlchemy** (mysql+mysqlconnector) e carga com **to_sql(if_exists="append")** respeitando a ordem das FKs:  
      categorias -> clientes -> vendedores -> produtos -> pedidos -> itens_pedido -> pagamentos
 
-4. **Orquestração - `main()`**
-   - Mede tempo de execução com `datetime.now()` e orquestra Extract -> Transform -> Load.
+4. **Orquestração - main()**
+   - Mede tempo de execução com **datetime.now()** e orquestra Extract -> Transform -> Load.
 
 ---
 
@@ -73,7 +72,7 @@ clientes.xlsx | pedidos.xlsx | itens_pedido.xlsx | produtos.xlsx | categorias.xl
 05. Ticket Médio por cliente  
 
 **Rankings e Filtros:**
-06. Ranking de vendedores com `DENSE_RANK()`  
+06. Ranking de vendedores com **DENSE_RANK()**  
 07. Faturamento mensal  
 08. Pagamentos por cliente  
 09. Top 10 clientes por Qtd de pedidos  
@@ -82,8 +81,8 @@ clientes.xlsx | pedidos.xlsx | itens_pedido.xlsx | produtos.xlsx | categorias.xl
 **Análises Avançadas com Window Functions:**
 11. Ranking de produtos por faturamento  
 12. Ranking de vendedores por cliente  
-13. Crescimento percentual mensal com `LAG()`  
-14. Relatório completo de clientes com recorrência, inatividade, classificação e `LEAD()`  
+13. Crescimento percentual mensal com **LAG()**  
+14. Relatório completo de clientes com recorrência, inatividade, classificação e **LEAD()**  
 
 ---
 
@@ -97,8 +96,8 @@ clientes.xlsx | pedidos.xlsx | itens_pedido.xlsx | produtos.xlsx | categorias.xl
 
 ### 🚀 Como Rodar
 
-pip install pandas openpyxl sqlalchemy mysql-connector-python
-python Python/ecommerce_etl_analytics.py
+    pip install pandas openpyxl sqlalchemy mysql-connector-python
+    python Python/ecommerce_etl_analytics.py
 
 ---
 
