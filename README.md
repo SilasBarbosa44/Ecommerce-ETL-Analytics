@@ -72,6 +72,9 @@ clientes.xlsx | pedidos.xlsx | itens_pedido.xlsx | produtos.xlsx | categorias.xl
 05. Ticket Médio por cliente  
 
 **Rankings e Filtros:**
+
+
+
 06. Ranking de vendedores com **DENSE_RANK()**  
 07. Faturamento mensal  
 08. Pagamentos por cliente  
@@ -79,6 +82,9 @@ clientes.xlsx | pedidos.xlsx | itens_pedido.xlsx | produtos.xlsx | categorias.xl
 10. Vendedores acima da média (CTE + AVG)  
 
 **Análises Avançadas com Window Functions:**
+
+
+
 11. Ranking de produtos por faturamento  
 12. Ranking de vendedores por cliente  
 13. Crescimento percentual mensal com **LAG()**  
