@@ -1,4 +1,4 @@
-```
+
 # 📦 Ecommerce ETL - De Excel para SQL
 
 Projeto de ETL onde extraí 7 planilhas de Excel, tratei com Python (Pandas) e carreguei para um banco SQL relacional para análises.
@@ -109,6 +109,6 @@ Feito por **Silas Barbosa da Silva**
 <a href="https://github.com/SilasBarbosa44" target="_blank"><img src="https://img.shields.io/badge/GitHub-SilasBarbosa44-181717?style=for-the-badge&logo=github" alt="GitHub"></a>
 <a href="https://www.linkedin.com/in/silas-barbosa/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Silas%20Barbosa-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn"></a>
 
-```
+
 
 
