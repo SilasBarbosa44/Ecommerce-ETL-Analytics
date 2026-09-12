@@ -120,16 +120,10 @@ python Python/ecommerce_etl_analytics.py
 ---
 ### 👨‍💻 Autor
 
-Feito por **Silas Barbosa da Silva**
-
-### 👨‍💻 Autor
 
 Feito por **Silas Barbosa da Silva**
 
 [![GitHub](https://img.shields.io/badge/GitHub-SilasBarbosa44-181717?style=for-the-badge&logo=github)](https://github.com/SilasBarbosa44)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Silas%20Barbosa-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/seu-perfil-aqui/)### 👨‍💻 Autor
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Silas%20Barbosa-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/seu-perfil-aqui/)
 
-Feito por **Silas Barbosa da Silva**
 
-[![GitHub](https://img.shields.io/badge/GitHub-SilasBarbosa44-181717?style=for-the-badge&logo=github)](https://github.com/SilasBarbosa44)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Silas%20Barbosa-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/Silas Barbosa/)
