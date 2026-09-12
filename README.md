@@ -1,6 +1,3 @@
-Entendido! O motivo de estar cortando na hora de colar é que os blocos de código internos (````text` e ````bash`) fecham a caixa preta antes da hora no chat.
-
-Para resolver isso de vez, aqui está **todo o conteúdo puro**. Pode selecionar todo o texto dentro da caixa abaixo (ou clicar no botão de copiar) e colar direto no arquivo do GitHub:
 
 ```
 # 📦 Ecommerce ETL - De Excel para SQL
